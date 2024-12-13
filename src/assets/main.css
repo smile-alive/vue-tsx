@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Alibaba-PuHuiTi-B';
+		src: url('@/assets/fonts/Alibaba-PuHuiTi-Bold.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Alibaba-PuHuiTi-H';
+		src: url('@/assets/fonts/Alibaba-PuHuiTi-Heavy.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Alibaba-PuHuiTi-L';
+		src: url('@/assets/fonts/Alibaba-PuHuiTi-Light.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Alibaba-PuHuiTi-M';
+		src: url('@/assets/fonts/Alibaba-PuHuiTi-Medium.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'Alibaba-PuHuiTi-R';
+		src: url('@/assets/fonts/Alibaba-PuHuiTi-Regular.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+}
+
+@media print {
+	/* @page {
+		size: A4;
+		margin: 0;
+	} */
+}
