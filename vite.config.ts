@@ -1,16 +1,22 @@
 import { fileURLToPath, URL } from 'node:url';
 
-import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
 import VueJsx from '@vitejs/plugin-vue-jsx';
 import AutoImport from 'unplugin-auto-import/vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [
 		Vue(),
 		VueJsx(),
 		AutoImport({
-			imports: ['vue', 'vue-router'],
+			imports: [
+				'vue',
+				'vue-router',
+				{
+					'tailwind-merge': ['twMerge'],
+				},
+			],
 			include: [/\.(jsx|tsx|vue)$/],
 		}),
 	],
@@ -19,8 +25,5 @@ export default defineConfig({
 		alias: {
 			'@': fileURLToPath(new URL('./src', import.meta.url)),
 		},
-	},
-	server: {
-		port: 8000,
 	},
 });

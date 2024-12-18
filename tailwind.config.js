@@ -1,5 +1,5 @@
-import plugin from 'tailwindcss/plugin';
 import defaultTheme from 'tailwindcss/defaultTheme';
+import plugin from 'tailwindcss/plugin';
 
 const fontSize = Object.fromEntries(
 	Object.entries(defaultTheme.fontSize).map(([key, value]) => {
@@ -23,6 +23,20 @@ export default {
 				pl: 'Alibaba-PuHuiTi-L',
 				pm: 'Alibaba-PuHuiTi-M',
 				pr: 'Alibaba-PuHuiTi-R',
+			},
+			colors: {
+				print: {
+					100: '#f7f8fa',
+					200: '#ebedf0',
+					300: '#dcdee0',
+					400: '#c8c9cc',
+					500: '#969799',
+					600: '#646566',
+					700: '#323233',
+					800: '#020626',
+				},
+				food: '#286fff',
+				price: '#ff2e2e',
 			},
 		},
 	},
